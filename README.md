@@ -34,15 +34,18 @@ To build the project run:
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Start Json-Server
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To start a Json-Server, run:
 
 ```bash
-ng test
+npm i -g json-server
+json-server --watch db.json
 ```
+
+## For Admin Dashboard
+
+Use Name as "Vivek" & Password as 9909
 
 ## Running end-to-end tests
 

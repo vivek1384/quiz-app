@@ -1,0 +1,25 @@
+<div class="topnav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/add-questions">Add Questions</a>
+    <a routerLink="/all-questions">All Questions</a>
+    <a routerLink="/history-admin">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name">{{name}}</a>
+</div>
+
+<div class="edt">
+    <form action="">
+        <input type="text" name="name" placeholder="Enter Question" [(ngModel)]="question.question">
+        <input type="text" name="surname" placeholder="Enter Option A" [(ngModel)]="question.optionA">
+        <input type="text" name="surname" placeholder="Enter Option B" [(ngModel)]="question.optionB">
+        <input type="text" name="surname" placeholder="Enter Option C" [(ngModel)]="question.optionC">
+        <input type="text" name="surname" placeholder="Enter Option D" [(ngModel)]="question.optionD">
+        <select type="text" class="input" name="quizName" placeholder="Enter Quiz Name" [(ngModel)]="question.quizId">
+            @for (item of quizList; track $index) {
+                <option value={{item.id}}>{{item.name}}</option>
+            }
+        </select>
+        <input type="text" name="surname" placeholder="Enter Answer" [(ngModel)]="question.answer">
+        <button (click)="addQuestiion(question)">Add Question</button>
+    </form>
+</div>

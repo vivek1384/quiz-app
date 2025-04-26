@@ -1,0 +1,55 @@
+<div class="topnav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/add-questions">Add Questions</a>
+    <a routerLink="/all-questions">All Questions</a>
+    <a routerLink="/history-admin">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name">{{name}}</a>
+</div>
+
+<div class="container">
+    @for (item of questionList; track $index) {
+    <div class="card">
+        <h2> {{$index+1}}. {{item.question}}</h2>
+        <!-- <input type="radio" name="optionA" [(ngModel)]="question.optionA">
+        <label>{{item.optionA}}</label><br>
+        <input type="radio" name="optionB" [(ngModel)]="question.optionB">
+        <label>{{item.optionB}}</label><br>
+        <input type="radio" name="optionC" [(ngModel)]="question.optionC">
+        <label>{{item.optionC}}</label><br>
+        <input type="radio" name="optionD" [(ngModel)]="question.optionD">
+        <label>{{item.optionD}}</label><br><br>
+        <input type="submit" value="Submit"> -->
+
+        <h3>A. {{item.optionA}}</h3>
+        <h3>B. {{item.optionB}}</h3>
+        <h3>C. {{item.optionC}}</h3>
+        <h3>D. {{item.optionD}}</h3>
+        <button (click)="onEdit(item.id)">Edit</button>
+        <button (click)="onDelete(item.id)">Delete</button>
+    </div>
+    }
+</div>
+
+@if(isEdit){
+<div class="edit-container">
+    <div class="edt">
+        <form action="">
+            <input type="text" name="question" [(ngModel)]="question.question" placeholder="Enter Question" >
+            
+            <input type="text" name="optionA" [(ngModel)]="question.optionA" placeholder="Enter Option A" >
+
+            <input type="text" name="optionB" [(ngModel)]="question.optionB" placeholder="Enter Option B" >
+
+            <input type="text" name="optionC" [(ngModel)]="question.optionC" placeholder="Enter Option C" >
+
+            <input type="text" name="optionD" [(ngModel)]="question.optionD" placeholder="Enter Option D" >
+
+            <input type="text" name="answer" [(ngModel)]="question.answer" placeholder="Enter Answer">
+
+            <button (click)="onEditQuestion(question.id, question)">Edit Question</button>
+            <button (click)="onClose()">Close</button>
+        </form>
+    </div>
+</div>
+}

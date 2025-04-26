@@ -1,0 +1,197 @@
+@if(naBar=='Admin'){
+<div class="topnav">
+    <a>Home</a>
+    <a routerLink="/add-questions">Add Questions</a>
+    <a routerLink="/all-questions">All Questions</a>
+    <a routerLink="/history-admin">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name">{{name}} ♠</a>
+</div>
+}
+@else if(naBar=='User'){
+<div class="topnav">
+    <a>Home</a>
+    <a routerLink="/quiz">Quiz</a>
+    <a routerLink="/history">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name2">{{name}}</a>
+</div>
+}
+@if(naBar=='Admin'){
+    <div class="container1">
+        <div class="header">
+            <h1>
+                Quiz :
+            </h1>
+            <button (click)="onAddQuiz()">Add Quiz</button>
+        </div>
+        <div class="quiz">
+            @for (item of quizList; track $index) {
+            <div class="card">
+                <h2>Quiz Name: {{item.name}}</h2>
+                <h2>Quiz ID: {{item.id}}</h2>
+                <div class="action">
+                    <button (click)="onEditQuiz1(item.id)">
+                        Edit
+                    </button>
+                    <button (click)="onQuizDelete(item.id)">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        }
+        </div>
+    </div>
+<div class="container">
+    <div class="row1">
+        <div class="header">
+            <h1>
+                Users:
+            </h1>
+            <button (click)="onAddUser1()">Add User</button>
+        </div>
+        @for (item of userList; track $index) {
+        <div class="card">
+            <h2> Name : {{item.name}} {{item.surname}}</h2>
+            <p>Password : {{item.password}}</p>
+            <div class="action">
+                <button (click)="onEditUser1(item.id)">
+                    Edit
+                </button>
+                <button (click)="onUserDelete(item.id)">
+                    Delete
+                </button>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="row2">
+        <div class="header">
+            <h1>
+                Admin:
+            </h1>
+            <button (click)="onAddAdmin1()">Add Admin</button>
+        </div>
+        @for (item of adminList; track $index) {
+        <div class="card">
+            <h2> Name : {{item.name}} {{item.surname}}</h2>
+            <p>Password : {{item.password}}</p>
+            <div class="action">
+                <button (click)="onEditAdmin1(item.id)">
+                    Edit
+                </button>
+                <button (click)="onAdminDelete(item.id)">
+                    Delete
+                </button>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="row3">
+        <h1>
+            Questions:
+        </h1>
+        @for (item of questionList; track $index) {
+        <div class="card">
+            <div>
+                <h2>{{$index + 1}}. {{item.question}}</h2>
+            </div>
+            <div class="option">
+                <div>
+                    <p>A. {{item.optionA}}</p>
+                    <p>C. {{item.optionC}}</p>
+                </div>
+                <div>
+                    <p>B. {{item.optionB}}</p>
+                    <p>D. {{item.optionD}}</p>
+                </div>
+            </div>
+            <div>
+                <h3>Answer: {{item.answer}}</h3>
+            </div>
+            <div>
+                <h3>Quiz Name: {{item.quizId}}</h3>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+}
+
+@if(isEdit){
+<div class="edit-container">
+    <div class="edt">
+        <form action="">
+            <input type="text" name="question" [(ngModel)]="admin.name" placeholder="Enter Admin First name">
+
+            <input type="text" name="optionA" [(ngModel)]="admin.surname" placeholder="Enter Admin LastName">
+
+            <input type="text" name="optionB" [(ngModel)]="admin.password" placeholder="Enter Admin Password">
+
+            @if(addAdmin){
+            <button (click)="onAddAdmin2(admin)">Add Admin</button>
+            }@else if(!addAdmin){
+            <button (click)="onEditAdmin2(admin.id, admin)">Edit Admin</button>
+            }
+            <button (click)="onClose()">Close</button>
+        </form>
+    </div>
+</div>
+}
+@if(isEditUser){
+<div class="edit-container">
+    <div class="edt">
+        <form action="">
+            <input type="text" name="question" [(ngModel)]="user.name" placeholder="Enter User Firstname">
+
+            <input type="text" name="optionA" [(ngModel)]="user.surname" placeholder="Enter User LastName">
+
+            <input type="text" name="optionB" [(ngModel)]="user.password" placeholder="Enter User Password">
+
+            @if(addUser){
+            <button (click)="onAddUser2(user)">Add User</button>
+            }@else if(!addUser){
+            <button (click)="onEditUser2(user.id, user)">Edit User</button>
+            }
+            <button (click)="onClose()">Close</button>
+        </form>
+    </div>
+</div>
+}
+@if(isEditQuiz){
+<div class="edit-container">
+    <div class="edt">
+        <form action="">
+            <input type="text" name="question" [(ngModel)]="quiz.name" placeholder="Enter Quiz Name">
+
+            <input type="text" name="optionA" [(ngModel)]="quiz.id" placeholder="Enter Quiz Id">
+
+            @if(addQuiz){
+            <button (click)="onAddQuiz2(quiz)">Add Quiz</button>
+            }@else if(!addQuiz){
+            <button (click)="onEditQuiz2(quiz.id, quiz)">Edit Quiz</button>
+            }
+            <button (click)="onClose()">Close</button>
+        </form>
+    </div>
+</div>
+}
+
+<!-- @if(naBar =='User'){
+<div class="container-user">
+    <div class="card-user">
+        <h1>Exam - 1</h1>
+
+    </div>
+    <div class="card-user">
+        <h1>Exam - 1</h1>
+
+    </div>
+    <div class="card-user">
+        <h1>Exam - 1</h1>
+
+    </div>
+</div>
+} -->
+
+<router-outlet />

@@ -1,0 +1,21 @@
+<div class="topnav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/add-questions">Add Questions</a>
+    <a routerLink="/all-questions">All Questions</a>
+    <a routerLink="/history-admin">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name">{{name}}</a>
+</div>
+
+<div class="container">
+    @for (item of historyList; track $index) {
+    <div class="card">
+        <h1>Exam - {{item.quizName}}</h1>
+        <div>
+            <h3>User name - {{item.userName}}</h3>
+            <h4>Final score - {{item.score}}</h4>
+            <button (click)="deleteSingle(item.id)">Delete</button>
+        </div>
+    </div>
+    }
+</div>

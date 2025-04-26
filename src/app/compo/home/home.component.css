@@ -1,0 +1,407 @@
+.topnav {
+  overflow: hidden;
+  background-color: aliceblue;
+  color: blueviolet;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  border-radius: 7px;
+}
+button{
+  cursor: pointer;
+}
+.topnav a {
+  float: left;
+  color: blueviolet;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: rgb(233, 212, 254);
+  color: blueviolet;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.name {
+  margin-left: 55rem;
+}
+
+.name2 {
+  margin-left: 69rem;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container .row1, .container .row2, .container .row3 {
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  flex: 33%;
+  border-radius: 7px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+
+.container .row1 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .row1 .header button{
+  height: 50px;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  border: 2px solid blueviolet;
+  background: rgb(244, 239, 249);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 15px;
+  color: blueviolet;
+}
+
+.container .row1 h1 {
+  color: blueviolet;
+  margin-left: 1rem;
+}
+
+.container .row1 .card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blueviolet;
+  margin: 1rem;
+  border-radius: 4px;
+  background: rgb(244, 239, 249);
+}
+
+.container .row1 .card h2 {
+  color: blueviolet;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.container .row1 .card p {
+  margin: 0;
+  margin-top: -0.3rem;
+  margin-left: 1rem;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.container .row1 .card .action{
+  margin-top: -2.2rem;
+  margin-left: 16rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container .row1 .card .action button{
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  background: aliceblue;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.container .row2 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .row2 .header button{
+  height: 50px;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  border: 2px solid blueviolet;
+  background: rgb(244, 239, 249);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 15px;
+  color: blueviolet;
+}
+
+.container .row2 h1 {
+  color: blueviolet;
+  margin-left: 1rem;
+}
+
+.container .row2 .card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blueviolet;
+  margin: 1rem;
+  border-radius: 4px;
+  background: rgb(244, 239, 249);
+}
+
+.container .row2 .card h2 {
+  color: blueviolet;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.container .row2 .card p {
+  margin: 0;
+  margin-top: -0.3rem;
+  margin-left: 1rem;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.container .row2 .card .action{
+  margin-top: -2.2rem;
+  margin-left: 16rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container .row2 .card .action button{
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  background: aliceblue;
+  color: blueviolet;
+  font-weight: bold;
+}
+.container .row3 h1 {
+  color: blueviolet;
+  margin-left: 1rem;
+}
+
+.container .row3 .card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blueviolet;
+  margin: 1rem;
+  border-radius: 4px;
+  background: rgb(244, 239, 249);
+  display: flex;
+  flex-direction: column;
+}
+.container .row3 .card div h2{
+  color: blueviolet;
+  margin-left: 1rem;
+  font-size: 22px;
+  margin-bottom: 0rem;
+}
+
+.container .row3 .card .option {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 2rem;
+  padding-left: 1rem;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.container .row3 .card div h3{
+  color: blueviolet;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+
+.edit-container{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.edt{
+  position: absolute;
+  z-index: 100;
+  width: 98.8vw;
+  height: 100vh;
+  /* margin-top: 6rem; */
+  backdrop-filter: blur(8px);
+}
+
+.edt form{
+  position: absolute;
+  height: 290px;
+  width: 400px;
+  top: calc(50% - 180px);
+  left: calc(50% - 200px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(25px);
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  border-radius: 8px;
+}
+
+form input:first-child{
+  margin-top: 1.5rem;
+}
+
+form input{
+  padding: 5px 12px;
+  width: 75%;
+  font-size: 15px;
+  background: aliceblue;
+  color: blueviolet;
+  margin: 0 auto;
+  outline: none;
+  border: 2px solid blueviolet;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+
+form button{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 16px;
+  color: blueviolet;
+  background: aliceblue;
+  font-weight: bold;
+  padding: 10px 0;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-user{
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  border-radius: 8px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.container-user .card-user{
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid blueviolet;
+  border-radius: 6px;
+  /* padding: 1rem; */
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:start;
+  color: blueviolet;
+  background: rgb(244, 239, 249);
+}
+
+.container1{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* display: grid;
+  grid-template-rows: auto auto auto; */
+  gap: 2rem;
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.container1 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container1 .header button{
+  height: 50px;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: -2rem;
+  border: 2px solid blueviolet;
+  background: rgb(244, 239, 249);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 15px;
+  color: blueviolet;
+}
+
+.container1 h1 {
+  color: blueviolet;
+  margin-left: 1rem;
+  margin-bottom: -5rem;
+}
+
+
+.container1 .quiz .card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blueviolet;
+  margin: 1rem;
+  border-radius: 4px;
+  background: rgb(244, 239, 249);
+}
+.container1 .quiz .card h2 {
+  color: blueviolet;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.container1 .quiz .card p {
+  margin: 0;
+  margin-top: -0.3rem;
+  margin-left: 1rem;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.container1 .quiz .card .action{
+  margin-top: -2.2rem;
+  margin-left: 80rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container1 .quiz .card .action button{
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 2px solid blueviolet;
+  border-radius: 4px;
+  background: aliceblue;
+  color: blueviolet;
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-left: -1rem;
+}

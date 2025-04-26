@@ -1,0 +1,180 @@
+.topnav {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  color: blueviolet;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  border-radius: 7px;
+}
+
+button:disabled{
+  cursor: not-allowed;
+}
+.topnav a {
+  float: left;
+  color: blueviolet;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: rgb(233, 212, 254);
+  color: blueviolet;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.name {
+  margin-left: 62rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: blueviolet;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 1rem;
+}
+
+.numbers p {
+  background-color: aliceblue;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  transition: 0.2s all;
+  color: blueviolet;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.numbers p:hover {
+  transform: scale(1.1);
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+  border: none;
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  border-radius: 8px;
+  margin-top: 2rem;
+  /* height: fit-content; */
+  display: flex;
+  padding: 2rem;
+  color: blueviolet;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container .card {
+  width: 90%;
+  margin: auto;
+  border: 2px solid blueviolet;
+  background: rgb(244, 239, 249);
+  border-radius: 6px;
+}
+
+.container .card h2 {
+  margin-left: 1rem;
+}
+
+.container p{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4.2rem;
+  color: red;
+}
+
+.container .card h2 span {
+  background-color: aliceblue;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  transition: 0.2s all;
+  margin-right: 1rem;
+}
+
+.container .card h3 {
+  margin-left: 3rem;
+}
+
+.container .card .option{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  margin-bottom: 1rem;
+  margin-left: 1.4rem;
+}
+
+.container .card input {
+  margin-left: 4.1rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  font-weight: bold;
+  outline: none;
+  font-size: 17px;
+  padding: 4px;
+  padding-left: 7px;
+  background: aliceblue;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.container .card button {
+  font-size: 17px;
+  padding: 4px 12px;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  background: aliceblue;
+  font-weight: bold;
+  border-radius: 5px;
+  /* cursor: pointer; */
+}
+
+.container .card button :disabled{
+  cursor: not-allowed;
+}
+
+.row{
+  margin-top: 1rem;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.row .item{
+  margin: 2rem;
+  background: aliceblue;
+  box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+  padding: 15px 50px;
+  font-size: 19px;
+  font-weight: bold;
+  color: blueviolet;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.row .item:hover{
+  transform: scale(1.06);
+}

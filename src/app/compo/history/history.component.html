@@ -1,0 +1,20 @@
+<div class="topnav">
+    <a>Home</a>
+    <a routerLink="/quiz">Quiz</a>
+    <a routerLink="/history">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name2">{{name}} ♠</a>
+    <button (click)="deleteAll()">Delete all</button>
+</div>
+
+<div class="container">
+    @for (item of historyList; track $index) {
+    <div class="card">
+        <h1>Exam - {{item.quizName}}</h1>
+        <div>
+            <h3>Final score - {{item.score}}</h3>
+            <button (click)="deleteSingle(item.id)">Delete</button>
+        </div>
+    </div>
+    }
+</div>

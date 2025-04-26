@@ -1,0 +1,327 @@
+{
+  "questions": [
+    {
+      "id": "add3",
+      "question": "What is the capital of France?",
+      "optionA": "Mumbai",
+      "optionB": "Berlin",
+      "optionC": "Madrid",
+      "optionD": "Paris",
+      "answer": "Paris",
+      "quizId": 1
+    },
+    {
+      "id": "a6eb",
+      "question": "How many continents are there?",
+      "optionA": "4",
+      "optionB": "5",
+      "optionC": "6",
+      "optionD": "7",
+      "answer": "7",
+      "quizId": 1
+    },
+    {
+      "id": "43b9",
+      "question": "In what year did World War II begin?",
+      "optionA": "1914",
+      "optionB": "1945",
+      "optionC": "1939",
+      "optionD": "1942",
+      "answer": "1945",
+      "quizId": 1
+    },
+    {
+      "id": "b91c",
+      "question": "Who was the first President of the United States?",
+      "optionA": "Thomas Jefferson",
+      "optionB": "Abraham Lincoln",
+      "optionC": "George Washington",
+      "optionD": "John Adams",
+      "answer": "George Washington",
+      "quizId": 1
+    },
+    {
+      "id": "accb",
+      "question": "What is the chemical symbol for water?",
+      "optionA": "H2O",
+      "optionB": "NaCl",
+      "optionC": "CO2",
+      "optionD": "O2",
+      "answer": "H2O",
+      "quizId": 1
+    },
+    {
+      "id": "bace",
+      "question": "What is the smallest unit of matter?",
+      "optionA": "Molecule",
+      "optionB": "Cell",
+      "optionC": "Atom",
+      "optionD": "Electron",
+      "answer": "Atom",
+      "quizId": 2
+    },
+    {
+      "id": "e25a",
+      "question": "Which river flows through London?",
+      "optionA": "Seine",
+      "optionB": "Thames",
+      "optionC": "Rhine",
+      "optionD": "Danube",
+      "answer": "Thames",
+      "quizId": 2
+    },
+    {
+      "id": "ecea",
+      "question": "Which country is home to the Amazon rainforest?",
+      "optionA": "Argentina",
+      "optionB": "Brazil",
+      "optionC": "Peru",
+      "optionD": "Colombia",
+      "answer": "Brazil",
+      "quizId": 2
+    },
+    {
+      "id": "8a04",
+      "question": "Who wrote \"Hamlet\"?",
+      "optionA": "Jane Austen",
+      "optionB": "William Shakespeare",
+      "optionC": "Mark Twain",
+      "optionD": "Charles Dickens",
+      "answer": "William Shakespeare",
+      "quizId": 2
+    },
+    {
+      "id": "b3e9",
+      "question": "What color pill does Neo swallow in The Matrix?",
+      "optionA": "Blue",
+      "optionB": " Red",
+      "optionC": "Green ",
+      "optionD": "Yellow",
+      "answer": "Red",
+      "quizId": 2
+    },
+    {
+      "id": "d5f8",
+      "question": "How many infinity stones are there?",
+      "optionA": "4",
+      "optionB": "5",
+      "optionC": "6",
+      "optionD": "7",
+      "answer": "6",
+      "quizId": 3
+    },
+    {
+      "id": "c175",
+      "question": "What is the chemical symbol for gold?",
+      "optionA": "Ag",
+      "optionB": "Au",
+      "optionC": "Fe",
+      "optionD": "Hg",
+      "answer": "Au",
+      "quizId": 3
+    },
+    {
+      "id": "2f99",
+      "question": "In what year did the Berlin Wall fall?",
+      "optionA": "1989",
+      "optionB": "1990",
+      "optionC": "1961",
+      "optionD": "1985",
+      "answer": "1989",
+      "quizId": 3
+    },
+    {
+      "id": "45d7",
+      "question": "How many bones are in the human body?",
+      "optionA": "206",
+      "optionB": "213",
+      "optionC": "300",
+      "optionD": "180",
+      "answer": "206",
+      "quizId": 3
+    },
+    {
+      "id": "fc75",
+      "question": "Which is the smallest country in the world?",
+      "optionA": "Monaco",
+      "optionB": "Nauru",
+      "optionC": "Vatican City",
+      "optionD": "Tuvalu",
+      "answer": "Vatican City",
+      "quizId": 3
+    },
+    {
+      "id": "a6cb",
+      "question": "What is the largest ocean on Earth?",
+      "optionA": "Atlantic Ocean",
+      "optionB": "Indian Ocean",
+      "optionC": "Arctic Ocean",
+      "optionD": "Pacific Ocean",
+      "answer": "Pacific Ocean",
+      "quizId": 4
+    },
+    {
+      "id": "65b9",
+      "question": "How many sides does a hexagon have?",
+      "optionA": "4",
+      "optionB": "5",
+      "optionC": "6",
+      "optionD": "8",
+      "answer": "6",
+      "quizId": 4
+    },
+    {
+      "id": "42b2",
+      "question": "How many degrees are there in a right angle?",
+      "optionA": "45",
+      "optionB": "90",
+      "optionC": "180",
+      "optionD": "360",
+      "answer": "90",
+      "quizId": 4
+    },
+    {
+      "id": "366c",
+      "question": "How many players are there on a basketball team on the court at one time?",
+      "optionA": "7",
+      "optionB": "5",
+      "optionC": "11",
+      "optionD": "6",
+      "answer": "5",
+      "quizId": 4
+    },
+    {
+      "id": "750a",
+      "question": "What is the speed of light in a vacuum, approximately, in kilometers per second?",
+      "optionA": "200,000",
+      "optionB": "250,000",
+      "optionC": "300,000",
+      "optionD": "350,000",
+      "answer": "300,000",
+      "quizId": 4
+    },
+    {
+      "id": "5553",
+      "question": "How many years is a U.S. Presidential term?",
+      "optionA": "1",
+      "optionB": "2",
+      "optionC": "3",
+      "optionD": "4",
+      "answer": "4",
+      "message": "",
+      "givenAnswer": "",
+      "quizId": "5",
+      "quizName": ""
+    },
+    {
+      "id": "7c48",
+      "question": "When did India gain independence from British rule?",
+      "optionA": "1945",
+      "optionB": "1949",
+      "optionC": "1947",
+      "optionD": "1941",
+      "answer": "1947",
+      "message": "",
+      "givenAnswer": "",
+      "quizId": "5",
+      "quizName": ""
+    },
+    {
+      "id": "bd55",
+      "question": "Who was the first Prime Minister of India?",
+      "optionA": " Mahatma Gandhi",
+      "optionB": "Sardar Patel",
+      "optionC": "Rajendra Prasad",
+      "optionD": "Jawaharlal Nehru",
+      "answer": "Jawaharlal Nehru",
+      "message": "",
+      "givenAnswer": "",
+      "quizId": "5",
+      "quizName": ""
+    },
+    {
+      "id": "b8dc",
+      "question": "What is the ideology of the Bharatiya Janata Party (BJP)?",
+      "optionA": "Socialism",
+      "optionB": "Right-wing nationalism",
+      "optionC": "Liberalism",
+      "optionD": "Communism",
+      "answer": "Right-wing nationalism",
+      "message": "",
+      "givenAnswer": "",
+      "quizId": "5",
+      "quizName": ""
+    },
+    {
+      "id": "2b8c",
+      "question": "Who is known as the \"Iron Man of India\"?",
+      "optionA": "Sardar Vallabhbhai Patel",
+      "optionB": "Jawaharlal Nehru",
+      "optionC": "Mahatma Gandhi",
+      "optionD": "Subhas Chandra Bose",
+      "answer": "Sardar Vallabhbhai Patel",
+      "message": "",
+      "givenAnswer": "",
+      "quizId": "5",
+      "quizName": ""
+    }
+  ],
+  "user": [
+    {
+      "id": "00ca",
+      "name": "Virat",
+      "surname": "Kohli",
+      "password": "1818"
+    },
+    {
+      "id": "1c93",
+      "name": "Jasprit",
+      "surname": "Bumrah",
+      "password": "9393"
+    }
+  ],
+  "admin": [
+    {
+      "name": "Vivek",
+      "surname": "Dudhatra",
+      "password": "9909",
+      "id": "d5a7"
+    }
+  ],
+  "history": [
+    {
+      "id": "2242",
+      "score": 1,
+      "quizId": 2,
+      "quizName": "Geography",
+      "userId": "00ca",
+      "userName": "Virat"
+    }
+  ],
+  "quiz": [
+    {
+      "name": "Generel knowledge",
+      "id": "1"
+    },
+    {
+      "name": "Geography",
+      "id": "2"
+    },
+    {
+      "name": "History",
+      "id": "3"
+    },
+    {
+      "name": "Politics",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "name": "Sports"
+    },
+    {
+      "id": "6",
+      "name": "Gujarat"
+    }
+  ]
+}

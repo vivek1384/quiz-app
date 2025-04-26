@@ -1,0 +1,60 @@
+.edt{
+    position: absolute;
+    z-index: 100;
+    width: 98vw;
+    height: 60vh;
+    margin-top: 6rem;
+    backdrop-filter: blur(25px);
+}
+
+.edt form{
+    position: absolute;
+    height: 190px;
+    width: 400px;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: blur(25px);
+    background: aliceblue;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+}
+
+form input:first-child{
+    margin-top: 1.5rem;
+}
+
+form input{
+    padding: 5px 12px;
+    width: 75%;
+    font-size: 18px;
+    background: aliceblue;
+    margin: 0 auto;
+    outline: none;
+    border: 2px solid blueviolet;
+    /* border-radius: 6px; */
+    border-top: none;
+    border-left: none;
+    color: blueviolet;
+    border-right: none;
+}
+
+form input::placeholder{
+    color: blueviolet;
+    opacity: 0.6;
+}
+
+form button{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    font-size: 16px;
+    color: blueviolet;
+    background: aliceblue;
+    font-weight: bold;
+    padding: 10px 0;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+}

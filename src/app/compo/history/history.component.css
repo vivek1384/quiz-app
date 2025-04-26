@@ -1,0 +1,82 @@
+.topnav {
+    overflow: hidden;
+    background-color: aliceblue;
+    color: blueviolet;
+    box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+    border-radius: 7px;
+  }
+  button{
+    cursor: pointer;
+  }
+  .topnav a {
+    float: left;
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .name{
+    margin-left: 60rem;
+  }
+  .name2 {
+    margin-left: 60rem;
+  }
+
+  .topnav button{
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    background: rgb(244, 239, 249);
+    color: blueviolet;
+    font-weight: bold;
+    margin-top: 6px;
+  }
+
+  .container{
+    background: aliceblue;
+    box-shadow: 0px 0px 10px 5px rgb(207, 159, 253);
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .container .card{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid blueviolet;
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:start;
+    color: blueviolet;
+    background: rgb(244, 239, 249);
+  }
+
+  .container .card div button{
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    background: aliceblue;
+    color: blueviolet;
+    font-weight: bold;
+  }

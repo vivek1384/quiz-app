@@ -1,0 +1,60 @@
+    <div class="topnav">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/quiz">Quiz</a>
+    <a routerLink="/history">History</a>
+    <a (click)="onLogout()">LogOut</a>
+    <a class="name">{{name}}</a>
+    <a>Your Score: {{resultCounter}}</a>
+</div>
+<div class="row">
+    @for (item of quizNameList; track $index) {
+    <div class="item" (click)="getQuestionListByQuiz(item.id)">{{item.name}}</div>
+    }
+</div>
+
+@if(isQuestionListOpen){
+<h2>Question list of {{quizNameForHeading}}:</h2>
+<div class="numbers">
+    <p (click)="onCounter1()">01</p>
+    <p (click)="onCounter2()">02</p>
+    <p (click)="onCounter3()">03</p>
+    <p (click)="onCounter4()">04</p>
+    <p (click)="onCounter5()">05</p>
+    <!-- <p (click)="onCounter6()">06</p>
+    <p (click)="onCounter7()">07</p>
+    <p (click)="onCounter8()">08</p>
+    <p (click)="onCounter9()">09</p>
+    <p (click)="onCounter10()">10</p>
+    <p (click)="onCounter11()">11</p>
+    <p (click)="onCounter12()">12</p>
+    <p (click)="onCounter13()">13</p>
+    <p (click)="onCounter14()">14</p>
+    <p (click)="onCounter15()">15</p>
+    <p (click)="onCounter16()">16</p>
+    <p (click)="onCounter17()">17</p>
+    <p (click)="onCounter18()">18</p>
+    <p (click)="onCounter19()">19</p>
+    <p (click)="onCounter20()">20</p> -->
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2><span>{{counter + 1}}.</span>{{questionList[counter].question}}</h2>
+        <p>{{questionList[counter].message}}</p>
+        <div class="option">
+        <div class="row">
+            <h3>A. {{questionList[counter].optionA}}</h3>
+            <h3>B. {{questionList[counter].optionB}}</h3>
+        </div>
+        <div class="row">
+            <h3>C. {{questionList[counter].optionC}}</h3>
+            <h3>D. {{questionList[counter].optionD}}</h3>
+        </div>
+    </div>
+        <input type="text" [(ngModel)]="questionList[counter].givenAnswer" name="answer">
+        <button (click)="onAnsSubmit(questionList[counter].id, questionList[counter].givenAnswer)" [disabled]="questionList[counter].message ? true : false">Submit</button>
+    </div>
+    
+</div>
+}
